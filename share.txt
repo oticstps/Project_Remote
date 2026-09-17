@@ -1,0 +1,3 @@
+(env) tpsoticsjetson@ubuntu:~$ gsettings set org.gnome.desktop.remote-access prompt-enabled false
+No such schema “org.gnome.desktop.remote-access”
+(env) tpsoticsjetson@ubuntu:~$ 
