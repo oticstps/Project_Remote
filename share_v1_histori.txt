@@ -1,0 +1,169 @@
+    2  sudo apt update
+    3  sudo apt install vino
+    4  mkdir -p ~/.config/autostart
+    5  cp /usr/share/applications/vino-server.desktop ~/.config/autostart
+    6  gsettings set org.gnome.Vino prompt-enabled false
+    7  gsettings set org.gnome.Vino require-encryption false
+    8  gsettings set org.gnome.Vino authentication-methods "['vnc']"
+    9  gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64)
+   10  python -version
+   11  python --version
+   12  python3 --version
+   13  mkdir on
+   14  cd on
+   15  mkdir python
+   16  cd python
+   17  python -m venv env
+   18  sudo apt install python3.10-venv
+   19  python -m venv env
+   20  source env/bin/activate
+   21  pip list
+   22  ifconfig
+   23  sudo apt update
+   24  sudo apt upgrade
+   25  ifconfig
+   26  sudo apt update
+   27  sudo apt install vino
+   28  sudo apt autoremove
+   29  mkdir -p ~/.config/autostart
+   30  cp /usr/share/applications/vino-server.desktop ~/.config/autostart
+   31  gsettings set org.gnome.Vino prompt-enabled false
+   32  gsettings set org.gnome.Vino require-encryption false
+   33  gsettings set org.gnome.Vino authentication-methods "['vnc']"
+   34  gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64)
+   35  sudo apt update
+   36  sudo apt install python3-pip -y
+   37  pip install -U pip
+   38  pip install ultralytics
+   39  sudo reboot
+   40  top
+   41  sudo apt update
+   42  sudo apt upgrade
+   43  ifconfig
+   44  cd on
+   45  pip install https://github.com/ultralytics/assets/releases/download/v0.0.0/torch-2.10.0-cp310-cp310-linux_aarch64.whl
+   46  pip install https://github.com/ultralytics/assets/releases/download/v0.0.0/torchvision-0.25.0-cp310-cp310-linux_aarch64.whl
+   47  wget https://developer.download.nvidia.com/compute/cudss/0.7.1/local_installers/cudss-local-tegra-repo-ubuntu2204-0.7.1_0.7.1-1_arm64.deb
+   48  sudo dpkg -i cudss-local-tegra-repo-ubuntu2204-0.7.1_0.7.1-1_arm64.deb
+   49  sudo cp /var/cudss-local-tegra-repo-ubuntu2204-0.7.1/cudss-*-keyring.gpg /usr/share/keyrings/
+   50  sudo apt-get update
+   51  sudo apt-get -y install cudss
+   52  pip install https://github.com/ultralytics/assets/releases/download/v0.0.0/onnxruntime_gpu-1.23.0-cp310-cp310-linux_aarch64.whl
+   53  dir
+   54  mdkir Project_Tes
+   55  mkdir Project_Tes
+   56  cd Project_TES
+   57  cd Project_Tes
+   58  dir
+   59  nano v1.py
+   60  sudo apt install nano
+   61  nano v1.py
+   62  python v1.py
+   63  dir
+   64  nano v2.py
+   65  python v2.py
+   66  pip list
+   67  sudo apt update
+   68  sudo apt install cuda-cupti-12-6 -y
+   69  python v2.py
+   70  q
+   71  python v2.py
+   72  reboot
+   73  cd on
+   74  dir
+   75  cd Project_
+   76  cd Project_Tes
+   77  dir
+   78  python v2.py
+   79  dir
+   80  nano v3.py
+   81  python v3.py
+   82  pip install pymodbus
+   83  python v3.py
+   84  pip install pyserial
+   85  python v3.py
+   86  sudo usermod -a -G dialout $USER
+   87  python v3.py
+   88  reboot
+   89  top
+   90  dir
+   91  cd Project_TES
+   92  CD Project_Te
+   93  CD Project_Tes
+   94  cd Project_Tes
+   95  cd on
+   96  cd Project_Tes
+   97  python v3.py
+   98  pip show pymodbus
+   99  python v3.py
+  100  top
+  101  sudo apt update
+  102  gsettings set org.gnome.Vino prompt-enabled false
+  103  gsettings set org.gnome.Vino notify-on-connect false
+  104  REBOOT
+  105  reboot
+  106  cd on
+  107  dir
+  108  sudo apt update
+  109  sudo apt upgrade
+  110  dir
+  111  cd Project_Tes
+  112  dir
+  113  top
+  114  sudo reboot
+  115  python v2.py
+  116  cd on
+  117  cd Project_Tes
+  118  dir
+  119  python v2.py
+  120  sudo apt update
+  121  sudo apt upgrade
+  122  dir
+  123  python v2.py
+  124  dir
+  125  python v2.py
+  126  top
+  127  sudo apt update
+  128  sudo apt upgarade
+  129  sudo apt upgrade
+  130  dir
+  131  sudo apt update
+  132  sudo apt upgrade
+  133  gsettings set org.gnome.desktop.remote-access prompt-enabled false
+  134  gsettings list-schemas | grep -i remote
+  135  gsettings set org.gnome.Vino prompt-enabled false
+  136  gsettings set org.gnome.Vino require-encryption false
+  137  sudo apt update
+  138  sudo apt install vino
+  139  sudo apt install dconf-editor
+  140  dconf-editor
+  141  # Ubah prompt menjadi password untuk VNC
+  142  gsettings set org.gnome.desktop.remote-desktop.vnc auth-method 'password'
+  143  # Restart layanan
+  144  systemctl --user restart gnome-remote-desktop.service
+  145  cd on
+  146  dir
+  147  cd Project_Tes
+  148  dir
+  149  wanda~
+  150  top
+  151  grdctl rdp set-credentials tpsoticsjetson otics1*
+  152  dir
+  153  sudo apt update
+  154  sudo apt upgrade
+  155  cd on
+  156  dir
+  157  cd Project_Tes
+  158  dir
+  159  grdctl rdp set-credentials tpsoticsjetson otics1*
+  160  reboot
+  161  mkdir -p ~/.config/autostart
+  162  cp /usr/share/applications/vino-server.desktop ~/.config/autostart
+  163  gsettings set org.gnome.Vino prompt-enabled false
+  164  gsettings set org.gnome.Vino require-encryption false
+  165  gsettings set org.gnome.Vino authentication-methods "['vnc']"
+  166  gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64)
+  167  reboot
+  168  poweroff
+  169  history
+(env) tpsoticsjetson@ubuntu:~/on/Project_Tes$ 
