@@ -1,3 +1,103 @@
-(env) tpsoticsjetson@ubuntu:~$ gsettings set org.gnome.desktop.remote-access prompt-enabled false
-No such schema “org.gnome.desktop.remote-access”
-(env) tpsoticsjetson@ubuntu:~$ 
+(env) tpsoticsjetson@ubuntu:~/on/Project_Tes$ touch v4.py
+(env) tpsoticsjetson@ubuntu:~/on/Project_Tes$ python v4.py
+[1/3] Memuat Model AI...
+WARNING ⚠️ Unable to automatically guess model task, assuming 'task=detect'. Explicitly define task for your model, i.e. 'task=detect', 'segment', 'semantic', 'depth', 'classify', 'pose' or 'obb'.
+INFO: Menggunakan model ONNX.
+      Pastikan onnxruntime / onnxruntime-gpu sudah terpasang.
+      Jika DEVICE='cuda' error, ganti DEVICE='cpu'.
+Loading model.onnx for ONNX Runtime inference...
+requirements: Ultralytics requirement ['onnx'] not found, attempting AutoUpdate...
+Collecting onnx
+  Downloading onnx-1.22.0-cp310-cp310-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl.metadata (8.5 kB)
+Requirement already satisfied: numpy>=1.23.2 in /home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages (from onnx) (2.2.6)
+Requirement already satisfied: protobuf>=4.25.1 in /home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages (from onnx) (7.36.1)
+Requirement already satisfied: typing_extensions>=4.15.0 in /home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages (from onnx) (4.16.0)
+Collecting ml_dtypes>=0.5.4 (from onnx)
+  Downloading ml_dtypes-0.6.0-cp310-cp310-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (8.8 kB)
+Downloading onnx-1.22.0-cp310-cp310-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl (18.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.9/18.9 MB 3.6 MB/s  0:00:05
+Downloading ml_dtypes-0.6.0-cp310-cp310-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (356 kB)
+Installing collected packages: ml_dtypes, onnx
+
+Successfully installed ml_dtypes-0.6.0 onnx-1.22.0
+
+requirements: AutoUpdate success ✅ 12.8s
+WARNING ⚠️ requirements: Restart runtime or rerun command for updates to take effect
+
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/home/tpsoticsjetson/on/Project_Tes/v4.py", line 285, in <module>
+    main()
+  File "/home/tpsoticsjetson/on/Project_Tes/v4.py", line 166, in main
+    model_names = getattr(model, 'names', None)
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/engine/model.py", line 1006, in names
+    predictor.setup_model(model=self.model, verbose=False)  # do not mess with self.predictor.model args
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/utils/torch_utils.py", line 97, in disable
+    return fn(*args, **kwargs)
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/engine/predictor.py", line 429, in setup_model
+    self.model = AutoBackend(
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/utils/torch_utils.py", line 97, in disable
+    return fn(*args, **kwargs)
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/nn/autobackend.py", line 245, in __init__
+    self.backend = self._BACKEND_MAP[format](model, **backend_kwargs)
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/nn/backends/onnx.py", line 55, in __init__
+    super().__init__(weight, device, fp16)
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/nn/backends/base.py", line 105, in __init__
+    self.load_model(weight)
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/nn/backends/onnx.py", line 77, in load_model
+    import onnxruntime
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/onnxruntime/__init__.py", line 24, in <module>
+    from onnxruntime.capi._pybind_state import (
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/onnxruntime/capi/_pybind_state.py", line 32, in <module>
+    from .onnxruntime_pybind11_state import *  # noqa
+Traceback (most recent call last):
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/numpy/core/_multiarray_umath.py", line 44, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+Traceback (most recent call last):
+  File "/home/tpsoticsjetson/on/Project_Tes/v4.py", line 285, in <module>
+    main()
+  File "/home/tpsoticsjetson/on/Project_Tes/v4.py", line 166, in main
+    model_names = getattr(model, 'names', None)
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/engine/model.py", line 1006, in names
+    predictor.setup_model(model=self.model, verbose=False)  # do not mess with self.predictor.model args
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/utils/torch_utils.py", line 97, in disable
+    return fn(*args, **kwargs)
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/engine/predictor.py", line 429, in setup_model
+    self.model = AutoBackend(
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/utils/torch_utils.py", line 97, in disable
+    return fn(*args, **kwargs)
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/nn/autobackend.py", line 245, in __init__
+    self.backend = self._BACKEND_MAP[format](model, **backend_kwargs)
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/nn/backends/onnx.py", line 55, in __init__
+    super().__init__(weight, device, fp16)
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/nn/backends/base.py", line 105, in __init__
+    self.load_model(weight)
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/ultralytics/nn/backends/onnx.py", line 77, in load_model
+    import onnxruntime
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/onnxruntime/__init__.py", line 70, in <module>
+    raise import_capi_exception
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/onnxruntime/__init__.py", line 24, in <module>
+    from onnxruntime.capi._pybind_state import (
+  File "/home/tpsoticsjetson/on/python/env/lib/python3.10/site-packages/onnxruntime/capi/_pybind_state.py", line 32, in <module>
+    from .onnxruntime_pybind11_state import *  # noqa
+ImportError: import numpy failed
+(env) tpsoticsjetson@ubuntu:~/on/Project_Tes$ 
